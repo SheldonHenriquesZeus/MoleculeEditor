@@ -32,10 +32,14 @@ class moleculeEditor {
       this.handleMouseUp.bind(this)
     );
     this.penButton.addEventListener("click", () => {
+      this.eraserButton.classList.remove("selected");
       this.currentTool = "pencil";
+      this.penButton.classList.add("selected");
     });
     this.eraserButton.addEventListener("click", () => {
+      this.penButton.classList.remove("selected");
       this.currentTool = "eraser";
+      this.eraserButton.classList.add("selected");
     });
     this.clearButton.addEventListener("click", this.clearLines.bind(this));
     this.undoButton.addEventListener("click", this.undoLines.bind(this));

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Molecule Editor</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <svg id="drawing-area"></svg>
+      <div id="tools">
+        <button id="pencil">Pencil</button>
+        <button id="eraser">Eraser</button>
+        <button id="clear">Clear</button>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+      </div>
+    </div>
+    <script src="./moleculeEditor.js"></script>
+    <script>
+      const editor = new moleculeEditor();
+    </script>
+  </body>
+</html>
